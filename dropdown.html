@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="end">
+  <head>
+    <title>My Bucket List</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+
+    <!-- Start header section -->
+    <header class="banner">
+      <div class="global-header">
+        <div class="content-wrapper">
+          <div class="logo">
+            <a href="/"><span><em>My</em> Bucket List</span></a>
+          </div>
+          <div class="search">
+            <form class="search" action="ideas" method="get">
+              <label for="global-search-input">Searh</label>
+              <input id="global-search-input" name="search" type="text" placeholder="e.g. swimming with dolphins">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+          <nav>
+            <ul class="global-nav">
+              <li><a href="#"></a>My Goals</li>
+              <li><a href="#"></a>Following</li>
+              <li><a href="inspiration.html">Inspiration</a></li>
+              <li class="has-dropdown">
+                <a href="#">
+                  <img src="assets/images/avatar.png" alt="Gray avatar illustration">
+                </a>
+                <ul class="dropdown">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Account Settings</a></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </li>
+              <li><a href="sign-up.html">Sign Up</a></li>
+              <li><a href="log-in.html">Log In</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="masthead">
+        <div class="content-wrapper">
+          <h1>Get inspired. Create your bucket list. Share.</h1>
+          <form class="search" action="ideas" method="get">
+            <label for="cta-search-input">Inspire me</label>
+            <input id="cta-search-input" name="search" type="text" placeholder="e.g. driving a racecar">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Start main section -->
+    <main>
+      <div class="content-wrapper">
+        <h2>Some ideas</h2>
+        <ul class="bare-list">
+          <li class="card">
+            <a class="card__thumb" href="ideas/see-the-northern-lights.html">
+              <img src="assets/images/northern-lights-small.jpg" alt="Northern lights above a house at night" width="255" height="170">
+              <div class="card__intro">
+                <h3 class="card__title">See the northern lights.</h3>
+                <span>1235 are doing this</span>
+              </div>
+            </a>
+              <form class="card__footer" action="idea" method="post">
+              <button type="submit" name="action" value="like">Like</button>
+              <button type="submit" name="action" value="addGoal">Add Goal</button>
+            </form>
+            </li>
+          <li class="card">
+            <a class="card__thumb" href="ideas/swim-with-dolphins.html">
+              <img src="assets/images/dolphins-small.jpg" alt="cute dolphins! :)" width="255" height="170">
+              <div class="card__intro">
+                <h3 class="card__title">Swim with dolphins</h3>
+                <span>1235 are doing this</span>
+              </div>
+            </a>
+            <form class="card__footer" action="idea" method="post">
+              <button type="submit" name="action" value="like">Like</button>
+              <button type="submit" name="action" value="addGoal">Add Goal</button>
+            </form>
+          </li>
+          <li class="card">
+            <a class="card__thumb" href="ideas/dance-like-nobody-is-watching.html">
+              <img src="assets/images/dancing-small.jpg" alt="Person dacing" width="255" height="170">
+              <div class="card__intro">
+                <h3 class="card__title">Dance like nobod's watching</h3>
+                <span>1235 are doing this</span>
+              </div>
+            </a>
+            <form class="card__footer" action="idea" method="post">
+              <button type="submit" name="action" value="like">Like</button>
+              <button type="submit" name="action" value="addGoal">Add Goal</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Start footer section -->
+    <footer class="global-footer">
+      <div class="content-wrapper">
+        <ul>
+          <li class="logo"><a href="/"> <span><em>My</em> Bucket List</span></a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/styleguide.html">Style Guide</a></li>
+          <li><a href="/terms.html">Terms of use</a></li>
+        </ul>
+        <p>&copy; EPFL 2020</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

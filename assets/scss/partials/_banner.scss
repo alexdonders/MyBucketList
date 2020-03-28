@@ -1,0 +1,43 @@
+/* ==========================
+ * BANNER
+ * ========================== */
+
+/* Header */
+.banner {
+  background: $gray-2 url(../images/mountain-lake.jpg)
+  no-repeat 50% 50% / cover;
+  color: $white;
+  padding: 0 0 ($pulse * 3) 0;
+  margin: 0 0 ($pulse * 3) 0;
+}
+
+.banner a {
+  color: $white;
+}
+
+.global-header {
+  margin: 0 0 ($pulse * 3) 0;
+  border-bottom: 1px solid $gray-2;
+}
+
+.masthead {
+  padding: 0 0 ($pulse * 3);
+  margin: 0 0 ($pulse * 3);
+
+}
+
+.masthead h1,
+.masthead label {
+  color: $white;
+}
+
+@media screen and (min-width: 480px) {
+  .masthead h1 {
+    text-align: center;
+  }
+
+  .masthead__search {
+    margin: 0 auto;
+    width: 50%;
+  }
+}

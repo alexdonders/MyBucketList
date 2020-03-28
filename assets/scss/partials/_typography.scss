@@ -1,0 +1,87 @@
+/* ==========================
+ * TYPOGRAPHY
+ * ========================== */
+
+p, ul, ol, span label {
+  font-size: 1.5em;
+}
+
+/* ----------------------
+ * Headers
+ * ----------------------- */
+
+h1, h2, h3, h4, h5, h6,
+.alpha, .beta, .gamma, .delta, .epsilon, .zeta {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1,
+.alpha {
+  font-size: 4.8em;
+  line-height: 1.2;
+}
+
+h1,
+.alpha {
+  font-size: 3.6em;
+  line-height: 1.2;
+  color: $black;
+}
+
+/* Tablets */
+@media screen and (min-width: 480px) {
+  h1,
+  .alpha {
+    font-size: 4em;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 800px) {
+  h1,
+  .alpha {
+    font-size: 4.8em;
+  }
+}
+
+h2,
+.beta {
+  font-size: 3.6em ;
+  line-height: 1.2;
+  color: $black;
+}
+
+h3,
+.gamma {
+  font-size: 2.8em ;
+  line-height: 1.2;
+  color: $black;
+}
+
+h4,
+.delta {
+  font-size: 1.3em;
+  line-height: 1.5;
+  color: $gray-1;
+  text-transform: uppercase;
+}
+
+h5,
+.epsilon {
+  font-size: 1.4em;
+  line-height: 1.4;
+  color: $gray-1;
+}
+
+h6,
+.zeta {
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: $gray-1;
+}
+
+button {
+  white-space: wrap;
+}

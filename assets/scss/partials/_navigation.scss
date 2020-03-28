@@ -1,0 +1,65 @@
+/* ----------------------
+ * Navigation
+ * ----------------------- */
+
+.global-nav > li {
+  float: left;
+  list-style-type: none;
+  margin-left: 1.6em;
+}
+
+.global-nav > li:first-child {
+  margin: 0;
+}
+
+/* ----------------------
+ * Drop-Down
+ * ----------------------- */
+
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  list-style-type: none;
+  white-space: nowrap;
+
+  background: $white;
+  padding: 0;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5);
+     -moz-box-shadow: 0 0 20px rgba(0,0,0,0.5);
+          box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.has-dropdown a:hover + .dropdown,
+.dropdown:hover,
+.dropdown:focus {
+  display: block;
+}
+
+.dropdown li {
+  border-bottom: 1px solid $gray-4;
+}
+
+.dropdown li:last-child {
+  border: none;
+}
+
+.dropdown a {
+  color: $primary-color;
+  display: block;
+  padding: 0 1.6em;
+}
+
+.dropdown a:hover,
+.dropdown a:focus {
+  text-decoration: underline;
+  background-color: $gray-4;
+}

@@ -1,0 +1,101 @@
+/* ==========================
+ * FORMS
+ * ========================== */
+
+/* Default form elements */
+.input {
+  font-size: 1.5rem;
+  color: $gray-1;
+}
+
+.input__label {
+  display: inline-block;
+  cursor: pointer;
+  font-size: inherit;
+  margin: 0 0 .5em;
+}
+
+.input__field {
+  background-color: $white;
+  border: 1px solid $gray-4;
+  padding: $pulse;
+  margin: 0;
+  &:focus {
+    border-color: #72787e;
+  }
+}
+
+.input__row {
+  display: flex;
+  & .btn {
+    border-radius: 0;
+    border-left-width: 0;
+  }
+
+  & .input__field {
+    flex: 1 0 10em;
+  }
+}
+
+.input--cta .input--field {
+  flex: 1 0 10em;
+}
+
+.input--cta .input__field {
+  border-color: $primary-color;
+}
+
+/* Button elements*/
+.btn {
+  font-size: 1.3rem;
+  background: $white;
+  color: $black;
+
+  padding: 1.6em;
+  margin: 0;
+
+  border: 1px solid $gray-4;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.btn--cta {
+  background-color: $primary-color;
+  color: $white;
+  border: 1px solid $primary-color;
+}
+
+.btn--warning {
+  background-color: $secondary-color;
+  color: $white;
+  border: 1px solid $secondary-color;
+}
+
+.btn:hover,
+.btn:active,
+.btn:hover {
+  text-decoration: none;
+  background-color: $gray-4;
+}
+
+.btn--cta:hover,
+.btn--cta:active,
+.btn--cta:hover {
+  -webkit-text-decoration: hsl(212, 64%, 36%);
+          -moz-text-decoration: hsl(212, 64%, 36%);
+       text-decoration: hsl(212, 64%, 36%);
+}
+
+.btn--warning:hover,
+.btn--warning:active,
+.btn--warning:hover {
+  -webkit-text-decoration: hsl(212, 64%, 36%);
+          -moz-text-decoration: hsl(212, 64%, 36%);
+       text-decoration: hsl(212, 64%, 36%);
+}

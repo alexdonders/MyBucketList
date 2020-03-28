@@ -1,0 +1,19 @@
+/* ==========================
+ * ICONS
+ * ========================== */
+
+.icon {
+  fill: $gray-1;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  .btn:hover &,
+  .btn:active &,
+  .btn:focus & {
+    fill: currentColor;
+  }
+}
+
+.icon--liked {
+  fill: #e25e43;
+}

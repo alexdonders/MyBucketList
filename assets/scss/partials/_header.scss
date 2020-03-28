@@ -1,0 +1,37 @@
+/* ----------------------
+ * Header
+ * ----------------------- */
+
+.global-header .content-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  flex-wrapper: wrap;
+}
+
+.global-header .logo {
+  float: left;
+  margin-right: 1.6em;
+}
+
+.global-header .search {
+    float: left;
+    margin: 0 1.6em -1px 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+       -moz-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+}
+
+.global-nav {
+  float: right;
+  padding: 0;
+}

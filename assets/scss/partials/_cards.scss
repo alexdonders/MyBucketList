@@ -1,0 +1,91 @@
+/* ==========================
+ * CARD
+ * ========================== */
+
+.card {
+  box-shadow: 0 0 20px rgba(0,0,0,0.14);
+  margin: 0 $pulse $pulse 0;
+  font-size: 1rem;
+}
+
+.card__thumb {
+  position: relative;
+  text-decoration: none;
+  color: $white;
+  display: block;
+}
+
+.card__intro {
+  padding: 1.6em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card__title {
+  font-size: 2em;
+  color: $white;
+}
+
+.card__intro span {
+  font-size: 1.3em;
+}
+
+.card__thumb img {
+  width: 100%;
+  display: block;
+}
+
+.cards::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* ----------------------
+ * Card footer w/Buttons
+ * ----------------------- */
+
+.card__footer {
+  display: flex;
+  border-top: 1px solid $gray-3
+}
+
+.card__footer .btn {
+  border: none;
+  border-radius: 0;
+}
+
+.card__footer .btn--like {
+  border-right: 1px solid  $gray-3;
+  flex: 1 0 auto;
+  text-align: left;
+}
+
+/* ----------------------
+ * Card RWD layout / grid
+ * ----------------------- */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Tablets */
+@include tablet {
+  .cards {
+    margin-right: -#{$pulse};
+  }
+  .cards .card {
+    float: left;
+    width: calc(50% - #{$pulse});
+  }
+}
+
+/* Desktop*/
+@include desktop {
+  .cards .card {
+    width: calc(25% - #{$pulse});
+  }
+}
